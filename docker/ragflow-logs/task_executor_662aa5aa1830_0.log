@@ -1,0 +1,51 @@
+2026-03-25 06:22:07,715 INFO     71 task_executor_662aa5aa1830_0 log path: /ragflow/logs/task_executor_662aa5aa1830_0.log, log levels: {'peewee': 'WARNING', 'pdfminer': 'WARNING', 'root': 'INFO'}
+2026-03-25 06:22:07,715 INFO     71 Staggering startup by 0.41s to prevent connection storm
+2026-03-25 06:22:08,130 INFO     71 
+    ____                      __  _
+   /  _/___  ____ ____  _____/ /_(_)___  ____     ________  ______   _____  _____
+   / // __ \/ __ `/ _ \/ ___/ __/ / __ \/ __ \   / ___/ _ \/ ___/ | / / _ \/ ___/
+ _/ // / / / /_/ /  __(__  ) /_/ / /_/ / / / /  (__  )  __/ /   | |/ /  __/ /
+/___/_/ /_/\__, /\___/____/\__/_/\____/_/ /_/  /____/\___/_/    |___/\___/_/
+          /____/
+    
+2026-03-25 06:22:08,130 INFO     71 RAGFlow version: v0.24.0
+2026-03-25 06:22:08,130 INFO     71 Current configs, from /ragflow/conf/service_conf.yaml:
+	ragflow: {'host': '0.0.0.0', 'http_port': 9380}
+	admin: {'host': '0.0.0.0', 'http_port': 9381}
+	mysql: {'name': 'rag_flow', 'user': 'root', 'password': '********', 'host': 'mysql', 'port': 3306, 'max_connections': 900, 'stale_timeout': 300, 'max_allowed_packet': 1073741824}
+	minio: {'user': 'rag_flow', 'password': '********', 'host': 'minio:9000', 'bucket': '', 'prefix_path': ''}
+	es: {'hosts': 'http://es01:9200', 'username': 'elastic', 'password': '********'}
+	os: {'hosts': 'http://opensearch01:9201', 'username': 'admin', 'password': '********'}
+	infinity: {'uri': 'infinity:23817', 'postgres_port': 5432, 'db_name': 'default_db'}
+	oceanbase: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root@ragflow', 'password': 'infini_rag_flow', 'host': 'oceanbase', 'port': 32881}}
+	seekdb: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root', 'password': 'infini_rag_flow', 'host': 'seekdb', 'port': 32882}}
+	redis: {'db': 1, 'username': '', 'password': '********', 'host': 'redis:6379'}
+	user_default_llm: {'default_models': {'embedding_model': {'api_key': 'xxx', 'base_url': 'http://tei:80'}}}
+	oauth: {'keycloak': {'type': 'oidc', 'icon': 'sso', 'display_name': 'Keycloak', 'client_id': 'ragflow', 'client_secret': '********', 'issuer': 'http://127.0.0.1.sslip.io:18088/realms/ragflow', 'scope': 'openid email profile', 'redirect_uri': 'http://localhost:18080/v1/user/oauth/callback/keycloak'}}
+2026-03-25 06:22:08,131 WARNING  71 SECURITY WARNING: Using auto-generated SECRET_KEY.
+2026-03-25 06:22:08,136 INFO     71 GET http://es01:9200/ [status:200 duration:0.003s]
+2026-03-25 06:22:08,138 INFO     71 HEAD http://es01:9200/ [status:200 duration:0.001s]
+2026-03-25 06:22:08,138 INFO     71 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-03-25 06:22:08,138 INFO     71 Elasticsearch http://es01:9200 is healthy.
+2026-03-25 06:22:08,138 INFO     71 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-03-25 06:22:08,139 INFO     71 Elasticsearch http://es01:9200 is healthy.
+2026-03-25 06:22:08,141 WARNING  71 Load term.freq FAIL!
+2026-03-25 06:22:08,145 WARNING  71 Realtime synonym is disabled, since no redis connection.
+2026-03-25 06:22:08,149 WARNING  71 Load term.freq FAIL!
+2026-03-25 06:22:08,152 WARNING  71 Realtime synonym is disabled, since no redis connection.
+2026-03-25 06:22:08,153 INFO     71 can't import package 'torch'
+2026-03-25 06:22:08,153 INFO     71 default embedding config: {'model': '', 'factory': '', 'api_key': 'xxx', 'base_url': 'http://tei:80'}
+2026-03-25 06:22:08,153 INFO     71 MAX_CONTENT_LENGTH: 134217728
+2026-03-25 06:22:08,153 INFO     71 MAX_FILE_COUNT_PER_USER: 0
+2026-03-25 06:22:08,153 INFO     71 RAGFlow ingestion is ready after 33.603495836257935s initialization.
+2026-03-25 06:22:08,154 WARNING  71 RedisDB.queue_info rag_flow_svr_queue got exception: no such key
+2026-03-25 06:22:08,155 WARNING  71 RedisDB.queue_info rag_flow_svr_queue got exception: no such key
+2026-03-25 06:22:08,156 WARNING  71 RedisDB.queue_info rag_flow_svr_queue got exception: no such key
+2026-03-25 06:22:08,158 INFO     71 task_executor_662aa5aa1830_0 reported heartbeat: {"ip_address": "172.18.0.8", "pid": 71, "name": "task_executor_662aa5aa1830_0", "now": "2026-03-25T06:22:08.154+09:00", "boot_at": "2026-03-25T06:22:07.714+09:00", "pending": 0, "lag": 0, "done": 0, "failed": 0, "current": {}}
+2026-03-25 06:22:08,159 WARNING  71 RedisDB.get_unacked_iterator queue rag_flow_svr_queue_1 doesn't exist
+2026-03-25 06:22:08,159 WARNING  71 RedisDB.get_unacked_iterator queue rag_flow_svr_queue doesn't exist
+2026-03-25 06:22:39,502 INFO     71 task_executor_662aa5aa1830_0 reported heartbeat: {"ip_address": "172.18.0.8", "pid": 71, "name": "task_executor_662aa5aa1830_0", "now": "2026-03-25T06:22:39.501+09:00", "boot_at": "2026-03-25T06:22:07.714+09:00", "pending": 0, "lag": 0, "done": 0, "failed": 0, "current": {}}
+2026-03-25 06:23:10,771 INFO     71 task_executor_662aa5aa1830_0 reported heartbeat: {"ip_address": "172.18.0.8", "pid": 71, "name": "task_executor_662aa5aa1830_0", "now": "2026-03-25T06:23:10.771+09:00", "boot_at": "2026-03-25T06:22:07.714+09:00", "pending": 0, "lag": 0, "done": 0, "failed": 0, "current": {}}
+2026-03-25 06:23:42,107 INFO     71 task_executor_662aa5aa1830_0 reported heartbeat: {"ip_address": "172.18.0.8", "pid": 71, "name": "task_executor_662aa5aa1830_0", "now": "2026-03-25T06:23:42.107+09:00", "boot_at": "2026-03-25T06:22:07.714+09:00", "pending": 0, "lag": 0, "done": 0, "failed": 0, "current": {}}
+2026-03-25 06:24:13,365 INFO     71 task_executor_662aa5aa1830_0 reported heartbeat: {"ip_address": "172.18.0.8", "pid": 71, "name": "task_executor_662aa5aa1830_0", "now": "2026-03-25T06:24:13.365+09:00", "boot_at": "2026-03-25T06:22:07.714+09:00", "pending": 0, "lag": 0, "done": 0, "failed": 0, "current": {}}
+2026-03-25 06:24:44,664 INFO     71 task_executor_662aa5aa1830_0 reported heartbeat: {"ip_address": "172.18.0.8", "pid": 71, "name": "task_executor_662aa5aa1830_0", "now": "2026-03-25T06:24:44.663+09:00", "boot_at": "2026-03-25T06:22:07.714+09:00", "pending": 0, "lag": 0, "done": 0, "failed": 0, "current": {}}

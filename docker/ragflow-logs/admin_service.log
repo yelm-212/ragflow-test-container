@@ -1,0 +1,45 @@
+2026-03-25 06:21:49,191 INFO     59 admin_service log path: /ragflow/logs/admin_service.log, log levels: {'peewee': 'WARNING', 'pdfminer': 'WARNING', 'root': 'INFO'}
+2026-03-25 06:21:49,191 INFO     59 
+        ____  ___   ______________                 ___       __          _     
+       / __ \/   | / ____/ ____/ /___ _      __   /   | ____/ /___ ___  (_)___ 
+      / /_/ / /| |/ / __/ /_  / / __ \ | /| / /  / /| |/ __  / __ `__ \/ / __ \
+     / _, _/ ___ / /_/ / __/ / / /_/ / |/ |/ /  / ___ / /_/ / / / / / / / / / /
+    /_/ |_/_/  |_\____/_/   /_/\____/|__/|__/  /_/  |_\__,_/_/ /_/ /_/_/_/ /_/ 
+    
+2026-03-25 06:21:49,225 INFO     59 RAGFlow version: v0.24.0
+2026-03-25 06:21:49,225 INFO     59 Current configs, from /ragflow/conf/service_conf.yaml:
+	ragflow: {'host': '0.0.0.0', 'http_port': 9380}
+	admin: {'host': '0.0.0.0', 'http_port': 9381}
+	mysql: {'name': 'rag_flow', 'user': 'root', 'password': '********', 'host': 'mysql', 'port': 3306, 'max_connections': 900, 'stale_timeout': 300, 'max_allowed_packet': 1073741824}
+	minio: {'user': 'rag_flow', 'password': '********', 'host': 'minio:9000', 'bucket': '', 'prefix_path': ''}
+	es: {'hosts': 'http://es01:9200', 'username': 'elastic', 'password': '********'}
+	os: {'hosts': 'http://opensearch01:9201', 'username': 'admin', 'password': '********'}
+	infinity: {'uri': 'infinity:23817', 'postgres_port': 5432, 'db_name': 'default_db'}
+	oceanbase: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root@ragflow', 'password': 'infini_rag_flow', 'host': 'oceanbase', 'port': 32881}}
+	seekdb: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root', 'password': 'infini_rag_flow', 'host': 'seekdb', 'port': 32882}}
+	redis: {'db': 1, 'username': '', 'password': '********', 'host': 'redis:6379'}
+	user_default_llm: {'default_models': {'embedding_model': {'api_key': 'xxx', 'base_url': 'http://tei:80'}}}
+	oauth: {'keycloak': {'type': 'oidc', 'icon': 'sso', 'display_name': 'Keycloak', 'client_id': 'ragflow', 'client_secret': '********', 'issuer': 'http://127.0.0.1.sslip.io:18088/realms/ragflow', 'scope': 'openid email profile', 'redirect_uri': 'http://localhost:18080/v1/user/oauth/callback/keycloak'}}
+2026-03-25 06:21:49,226 WARNING  59 SECURITY WARNING: Using auto-generated SECRET_KEY.
+2026-03-25 06:21:49,231 INFO     59 GET http://es01:9200/ [status:200 duration:0.004s]
+2026-03-25 06:21:49,232 INFO     59 HEAD http://es01:9200/ [status:200 duration:0.001s]
+2026-03-25 06:21:49,232 INFO     59 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-03-25 06:21:49,232 INFO     59 Elasticsearch http://es01:9200 is healthy.
+2026-03-25 06:21:49,232 INFO     59 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-03-25 06:21:49,233 INFO     59 Elasticsearch http://es01:9200 is healthy.
+2026-03-25 06:21:49,235 WARNING  59 Load term.freq FAIL!
+2026-03-25 06:21:49,240 WARNING  59 Realtime synonym is disabled, since no redis connection.
+2026-03-25 06:21:49,245 WARNING  59 Load term.freq FAIL!
+2026-03-25 06:21:49,250 WARNING  59 Realtime synonym is disabled, since no redis connection.
+2026-03-25 06:21:49,359 INFO     59 Added tenant for email: admin@ragflow.io, A default tenant has been set; changing the default models after login is strongly recommended.
+2026-03-25 06:21:49,364 WARNING  59 Unknown configuration key: os
+2026-03-25 06:21:49,365 WARNING  59 Unknown configuration key: oceanbase
+2026-03-25 06:21:49,365 WARNING  59 Unknown configuration key: seekdb
+2026-03-25 06:21:49,365 WARNING  59 Unknown configuration key: user_default_llm
+2026-03-25 06:21:49,365 WARNING  59 Unknown configuration key: oauth
+2026-03-25 06:21:49,365 INFO     59 RAGFlow admin is ready after 15.271092891693115s initialization.
+2026-03-25 06:21:49,378 INFO     59 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9381
+ * Running on http://172.18.0.8:9381
+2026-03-25 06:21:49,378 INFO     59 [33mPress CTRL+C to quit[0m

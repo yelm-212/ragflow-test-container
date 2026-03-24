@@ -1,0 +1,53 @@
+2026-03-25 06:22:07,723 INFO     54 ragflow_server log path: /ragflow/logs/ragflow_server.log, log levels: {'peewee': 'WARNING', 'pdfminer': 'WARNING', 'root': 'INFO'}
+2026-03-25 06:22:07,723 INFO     54 
+        ____   ___    ______ ______ __
+       / __ \ /   |  / ____// ____// /____  _      __
+      / /_/ // /| | / / __ / /_   / // __ \| | /| / /
+     / _, _// ___ |/ /_/ // __/  / // /_/ /| |/ |/ /
+    /_/ |_|/_/  |_|\____//_/    /_/ \____/ |__/|__/
+
+    
+2026-03-25 06:22:07,723 INFO     54 RAGFlow version: v0.24.0
+2026-03-25 06:22:07,723 INFO     54 project base: /ragflow
+2026-03-25 06:22:07,723 INFO     54 Current configs, from /ragflow/conf/service_conf.yaml:
+	ragflow: {'host': '0.0.0.0', 'http_port': 9380}
+	admin: {'host': '0.0.0.0', 'http_port': 9381}
+	mysql: {'name': 'rag_flow', 'user': 'root', 'password': '********', 'host': 'mysql', 'port': 3306, 'max_connections': 900, 'stale_timeout': 300, 'max_allowed_packet': 1073741824}
+	minio: {'user': 'rag_flow', 'password': '********', 'host': 'minio:9000', 'bucket': '', 'prefix_path': ''}
+	es: {'hosts': 'http://es01:9200', 'username': 'elastic', 'password': '********'}
+	os: {'hosts': 'http://opensearch01:9201', 'username': 'admin', 'password': '********'}
+	infinity: {'uri': 'infinity:23817', 'postgres_port': 5432, 'db_name': 'default_db'}
+	oceanbase: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root@ragflow', 'password': 'infini_rag_flow', 'host': 'oceanbase', 'port': 32881}}
+	seekdb: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root', 'password': 'infini_rag_flow', 'host': 'seekdb', 'port': 32882}}
+	redis: {'db': 1, 'username': '', 'password': '********', 'host': 'redis:6379'}
+	user_default_llm: {'default_models': {'embedding_model': {'api_key': 'xxx', 'base_url': 'http://tei:80'}}}
+	oauth: {'keycloak': {'type': 'oidc', 'icon': 'sso', 'display_name': 'Keycloak', 'client_id': 'ragflow', 'client_secret': '********', 'issuer': 'http://127.0.0.1.sslip.io:18088/realms/ragflow', 'scope': 'openid email profile', 'redirect_uri': 'http://localhost:18080/v1/user/oauth/callback/keycloak'}}
+2026-03-25 06:22:07,724 WARNING  54 SECURITY WARNING: Using auto-generated SECRET_KEY.
+2026-03-25 06:22:07,727 WARNING  54 Load term.freq FAIL!
+2026-03-25 06:22:07,730 WARNING  54 Realtime synonym is disabled, since no redis connection.
+2026-03-25 06:22:07,733 WARNING  54 Load term.freq FAIL!
+2026-03-25 06:22:07,736 WARNING  54 Realtime synonym is disabled, since no redis connection.
+2026-03-25 06:22:07,736 INFO     54 MAX_CONTENT_LENGTH: 134217728
+2026-03-25 06:22:07,737 INFO     54 MAX_FILE_COUNT_PER_USER: 0
+2026-03-25 06:22:19,135 INFO     54 Init message_id sequence done, current max id is 1.
+2026-03-25 06:22:19,136 INFO     54 No memory found, no need to init memory size.
+2026-03-25 06:22:19,137 INFO     54 No memory found, no need to fix missing tokenized memory.
+2026-03-25 06:22:19,137 INFO     54 init web data success:11.23894476890564
+2026-03-25 06:22:19,138 INFO     54 Recursively importing plugins from path `/ragflow/agent/plugin/embedded_plugins`
+2026-03-25 06:22:19,140 INFO     54 Loaded llm_tools plugin BadCalculatorPlugin version 1.0.0
+2026-03-25 06:22:19,140 INFO     54 RAGFlow server is ready after 45.04605746269226s initialization.
+2026-03-25 06:22:19,306 INFO     54 Running on http://0.0.0.0:9380 (CTRL + C to quit)
+2026-03-25 06:22:20,140 INFO     54 Starting update_progress thread (delayed)
+2026-03-25 06:22:20,141 INFO     54 update_progress lock_value: d605ebc3-eac8-43be-8622-b976fd499eba
+2026-03-25 06:22:25,702 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:22:25,705 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:22:25,706 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:22:25,707 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:23:29,422 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:23:29,425 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:23:29,425 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:23:29,426 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:23:54,086 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:23:54,087 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:23:54,097 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:23:54,098 WARNING  54 Unauthorized request (quart_auth)
