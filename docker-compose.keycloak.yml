@@ -1,0 +1,63 @@
+include:
+  - ./docker/docker-compose.yml
+
+services:
+  ragflow-cpu:
+    extra_hosts:
+      - "${KEYCLOAK_PUBLIC_HOST:-127.0.0.1.sslip.io}:host-gateway"
+
+  ragflow-gpu:
+    extra_hosts:
+      - "${KEYCLOAK_PUBLIC_HOST:-127.0.0.1.sslip.io}:host-gateway"
+
+  keycloak-db:
+    image: postgres:16-alpine
+    env_file:
+      - ./docker/.env
+    environment:
+      POSTGRES_DB: ${KEYCLOAK_DB:-keycloak}
+      POSTGRES_USER: ${KEYCLOAK_DB_USER:-keycloak}
+      POSTGRES_PASSWORD: ${KEYCLOAK_DB_PASSWORD:-keycloak}
+    volumes:
+      - keycloak_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${KEYCLOAK_DB_USER:-keycloak} -d ${KEYCLOAK_DB:-keycloak}"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+    networks:
+      - ragflow
+    restart: unless-stopped
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.1
+    depends_on:
+      keycloak-db:
+        condition: service_healthy
+    env_file:
+      - ./docker/.env
+    command:
+      - start-dev
+      - --import-realm
+      - --hostname=http://${KEYCLOAK_PUBLIC_HOST:-127.0.0.1.sslip.io}:${KEYCLOAK_PORT:-18088}
+      - --proxy-headers=xforwarded
+      - --http-enabled=true
+    environment:
+      KC_DB: postgres
+      KC_DB_URL_HOST: keycloak-db
+      KC_DB_URL_PORT: 5432
+      KC_DB_URL_DATABASE: ${KEYCLOAK_DB:-keycloak}
+      KC_DB_USERNAME: ${KEYCLOAK_DB_USER:-keycloak}
+      KC_DB_PASSWORD: ${KEYCLOAK_DB_PASSWORD:-keycloak}
+      KEYCLOAK_ADMIN: ${KEYCLOAK_ADMIN:-admin}
+      KEYCLOAK_ADMIN_PASSWORD: ${KEYCLOAK_ADMIN_PASSWORD:-admin1234}
+    volumes:
+      - ./docker/keycloak-realm.json:/opt/keycloak/data/import/keycloak-realm.json:ro
+    ports:
+      - ${KEYCLOAK_PORT:-18088}:8080
+    networks:
+      - ragflow
+    restart: unless-stopped
+
+volumes:
+  keycloak_postgres_data:

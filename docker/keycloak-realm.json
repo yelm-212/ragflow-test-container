@@ -1,0 +1,57 @@
+{
+  "realm": "ragflow",
+  "enabled": true,
+  "displayName": "RAGFlow Test Realm",
+  "registrationAllowed": false,
+  "resetPasswordAllowed": true,
+  "rememberMe": true,
+  "loginWithEmailAllowed": true,
+  "duplicateEmailsAllowed": false,
+  "clients": [
+    {
+      "clientId": "ragflow",
+      "name": "RAGFlow",
+      "description": "RAGFlow OIDC test client",
+      "enabled": true,
+      "protocol": "openid-connect",
+      "publicClient": false,
+      "secret": "ragflow-client-secret",
+      "directAccessGrantsEnabled": true,
+      "standardFlowEnabled": true,
+      "serviceAccountsEnabled": false,
+      "redirectUris": [
+        "http://localhost:18080/v1/user/oauth/callback/keycloak",
+        "http://127.0.0.1.sslip.io:18080/v1/user/oauth/callback/keycloak"
+      ],
+      "webOrigins": [
+        "http://localhost:18080",
+        "http://127.0.0.1.sslip.io:18080"
+      ],
+      "attributes": {
+        "pkce.code.challenge.method": "S256"
+      },
+      "defaultClientScopes": [
+        "profile",
+        "email",
+        "roles"
+      ]
+    }
+  ],
+  "users": [
+    {
+      "username": "ragtester",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "RAG",
+      "lastName": "Tester",
+      "email": "ragtester@example.com",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "ragtester123!",
+          "temporary": false
+        }
+      ]
+    }
+  ]
+}
