@@ -59,3 +59,104 @@
 2026-03-25 06:28:03,127 WARNING  54 Unauthorized request (quart_auth)
 2026-03-25 06:28:03,128 WARNING  54 Unauthorized request (quart_auth)
 2026-03-25 06:28:03,128 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:30:27,961 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:30:27,963 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:30:27,965 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:30:27,965 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:33:24,729 WARNING  54 load_user got exception Signature b'Ge5gJkeaZkr5656pFCgRjvWCYbc' does not match
+2026-03-25 06:33:24,730 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:33:24,732 WARNING  54 load_user got exception Signature b'Ge5gJkeaZkr5656pFCgRjvWCYbc' does not match
+2026-03-25 06:33:24,733 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:33:24,735 WARNING  54 load_user got exception Signature b'Ge5gJkeaZkr5656pFCgRjvWCYbc' does not match
+2026-03-25 06:33:24,736 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:33:24,736 WARNING  54 load_user got exception Signature b'Ge5gJkeaZkr5656pFCgRjvWCYbc' does not match
+2026-03-25 06:33:24,737 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:33:33,695 WARNING  54 load_user got exception Signature b'GQzYm_oL91qsf6_NK706SKBsynk' does not match
+2026-03-25 06:33:33,696 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:33:33,696 WARNING  54 load_user got exception Signature b'GQzYm_oL91qsf6_NK706SKBsynk' does not match
+2026-03-25 06:33:33,697 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:33:33,701 WARNING  54 load_user got exception Signature b'GQzYm_oL91qsf6_NK706SKBsynk' does not match
+2026-03-25 06:33:33,701 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:33:33,702 WARNING  54 load_user got exception Signature b'GQzYm_oL91qsf6_NK706SKBsynk' does not match
+2026-03-25 06:33:33,703 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:33:35,697 WARNING  54 load_user got exception Signature b'NkrhJZk0Yse0Tz8I6SjpiaiOVJI' does not match
+2026-03-25 06:33:35,699 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:33:35,700 WARNING  54 load_user got exception Signature b'NkrhJZk0Yse0Tz8I6SjpiaiOVJI' does not match
+2026-03-25 06:33:35,701 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:33:35,701 WARNING  54 load_user got exception Signature b'NkrhJZk0Yse0Tz8I6SjpiaiOVJI' does not match
+2026-03-25 06:33:35,702 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:33:35,702 WARNING  54 load_user got exception Signature b'NkrhJZk0Yse0Tz8I6SjpiaiOVJI' does not match
+2026-03-25 06:33:35,703 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:33:49,645 WARNING  54 load_user got exception Signature b'4z_NkAw5eF69acNpkGB8avu0T64' does not match
+2026-03-25 06:33:49,647 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:33:49,648 WARNING  54 load_user got exception Signature b'4z_NkAw5eF69acNpkGB8avu0T64' does not match
+2026-03-25 06:33:49,652 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:33:49,653 WARNING  54 load_user got exception Signature b'4z_NkAw5eF69acNpkGB8avu0T64' does not match
+2026-03-25 06:33:49,654 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:33:49,654 WARNING  54 load_user got exception Signature b'4z_NkAw5eF69acNpkGB8avu0T64' does not match
+2026-03-25 06:33:49,655 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:33:52,476 WARNING  54 load_user got exception Signature b'lJCPHLSc8-0e2eg21wczXSShZSU' does not match
+2026-03-25 06:33:52,477 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:33:52,477 WARNING  54 load_user got exception Signature b'lJCPHLSc8-0e2eg21wczXSShZSU' does not match
+2026-03-25 06:33:52,478 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:33:52,481 WARNING  54 load_user got exception Signature b'lJCPHLSc8-0e2eg21wczXSShZSU' does not match
+2026-03-25 06:33:52,482 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:33:52,483 WARNING  54 load_user got exception Signature b'lJCPHLSc8-0e2eg21wczXSShZSU' does not match
+2026-03-25 06:33:52,484 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:34:04,708 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:34:04,710 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:34:04,711 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:34:04,713 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:34:57,254 WARNING  54 load_user got exception Signature b'l-Ex1dlL6y2Z_IWBqXL6mqm2jxY' does not match
+2026-03-25 06:34:57,255 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:34:57,260 WARNING  54 load_user got exception Signature b'l-Ex1dlL6y2Z_IWBqXL6mqm2jxY' does not match
+2026-03-25 06:34:57,261 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:34:57,261 WARNING  54 load_user got exception Signature b'l-Ex1dlL6y2Z_IWBqXL6mqm2jxY' does not match
+2026-03-25 06:34:57,262 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:34:57,264 WARNING  54 load_user got exception Signature b'l-Ex1dlL6y2Z_IWBqXL6mqm2jxY' does not match
+2026-03-25 06:34:57,265 WARNING  54 Unauthorized request (quart_auth)
+2026-03-25 06:40:37,708 INFO     65 ragflow_server log path: /ragflow/logs/ragflow_server.log, log levels: {'peewee': 'WARNING', 'pdfminer': 'WARNING', 'root': 'INFO'}
+2026-03-25 06:40:37,708 INFO     65 
+        ____   ___    ______ ______ __
+       / __ \ /   |  / ____// ____// /____  _      __
+      / /_/ // /| | / / __ / /_   / // __ \| | /| / /
+     / _, _// ___ |/ /_/ // __/  / // /_/ /| |/ |/ /
+    /_/ |_|/_/  |_|\____//_/    /_/ \____/ |__/|__/
+
+    
+2026-03-25 06:40:37,708 INFO     65 RAGFlow version: v0.24.0
+2026-03-25 06:40:37,708 INFO     65 project base: /ragflow
+2026-03-25 06:40:37,708 INFO     65 Current configs, from /ragflow/conf/service_conf.yaml:
+	ragflow: {'host': '0.0.0.0', 'http_port': 9380}
+	admin: {'host': '0.0.0.0', 'http_port': 9381}
+	mysql: {'name': 'rag_flow', 'user': 'root', 'password': '********', 'host': 'mysql', 'port': 3306, 'max_connections': 900, 'stale_timeout': 300, 'max_allowed_packet': 1073741824}
+	minio: {'user': 'rag_flow', 'password': '********', 'host': 'minio:9000', 'bucket': '', 'prefix_path': ''}
+	es: {'hosts': 'http://es01:9200', 'username': 'elastic', 'password': '********'}
+	os: {'hosts': 'http://opensearch01:9201', 'username': 'admin', 'password': '********'}
+	infinity: {'uri': 'infinity:23817', 'postgres_port': 5432, 'db_name': 'default_db'}
+	oceanbase: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root@ragflow', 'password': 'infini_rag_flow', 'host': 'oceanbase', 'port': 32881}}
+	seekdb: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root', 'password': 'infini_rag_flow', 'host': 'seekdb', 'port': 32882}}
+	redis: {'db': 1, 'username': '', 'password': '********', 'host': 'redis:6379'}
+	user_default_llm: {'default_models': {'embedding_model': {'api_key': 'xxx', 'base_url': 'http://tei:80'}}}
+	oauth: {'keycloak': {'type': 'oidc', 'icon': 'sso', 'display_name': 'Keycloak', 'client_id': 'ragflow', 'client_secret': '********', 'issuer': 'http://127.0.0.1.sslip.io:18088/realms/ragflow', 'scope': 'openid email profile', 'redirect_uri': 'http://localhost:18080/v1/user/oauth/callback/keycloak'}}
+2026-03-25 06:40:37,709 WARNING  65 SECURITY WARNING: Using auto-generated SECRET_KEY.
+2026-03-25 06:40:37,712 WARNING  65 Load term.freq FAIL!
+2026-03-25 06:40:37,715 WARNING  65 Realtime synonym is disabled, since no redis connection.
+2026-03-25 06:40:37,717 WARNING  65 Load term.freq FAIL!
+2026-03-25 06:40:37,721 WARNING  65 Realtime synonym is disabled, since no redis connection.
+2026-03-25 06:40:37,721 INFO     65 MAX_CONTENT_LENGTH: 134217728
+2026-03-25 06:40:37,721 INFO     65 MAX_FILE_COUNT_PER_USER: 0
+2026-03-25 06:40:48,126 INFO     65 No need to init message_id sequence, current max id is 1.
+2026-03-25 06:40:48,128 INFO     65 No memory found, no need to init memory size.
+2026-03-25 06:40:48,129 INFO     65 No memory found, no need to fix missing tokenized memory.
+2026-03-25 06:40:48,129 INFO     65 init web data success:10.258131980895996
+2026-03-25 06:40:48,129 INFO     65 Recursively importing plugins from path `/ragflow/agent/plugin/embedded_plugins`
+2026-03-25 06:40:48,130 INFO     65 Loaded llm_tools plugin BadCalculatorPlugin version 1.0.0
+2026-03-25 06:40:48,130 INFO     65 RAGFlow server is ready after 42.91541075706482s initialization.
+2026-03-25 06:40:48,307 INFO     65 Running on http://0.0.0.0:9380 (CTRL + C to quit)
+2026-03-25 06:40:49,130 INFO     65 Starting update_progress thread (delayed)
+2026-03-25 06:40:49,131 INFO     65 update_progress lock_value: 5ffbf504-e099-470c-80b8-16fe8ad767e6
+2026-03-25 06:40:52,150 WARNING  65 Unauthorized request (quart_auth)
+2026-03-25 06:40:52,153 WARNING  65 Unauthorized request (quart_auth)
+2026-03-25 06:40:52,153 WARNING  65 Unauthorized request (quart_auth)
+2026-03-25 06:40:52,153 WARNING  65 Unauthorized request (quart_auth)

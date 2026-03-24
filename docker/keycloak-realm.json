@@ -27,9 +27,6 @@
         "http://localhost:18080",
         "http://127.0.0.1.sslip.io:18080"
       ],
-      "attributes": {
-        "pkce.code.challenge.method": "S256"
-      },
       "defaultClientScopes": [
         "profile",
         "email",

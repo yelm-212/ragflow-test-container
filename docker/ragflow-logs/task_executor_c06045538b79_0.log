@@ -1,0 +1,42 @@
+2026-03-25 06:40:37,817 INFO     80 task_executor_c06045538b79_0 log path: /ragflow/logs/task_executor_c06045538b79_0.log, log levels: {'peewee': 'WARNING', 'pdfminer': 'WARNING', 'root': 'INFO'}
+2026-03-25 06:40:37,817 INFO     80 Staggering startup by 0.07s to prevent connection storm
+2026-03-25 06:40:37,885 INFO     80 
+    ____                      __  _
+   /  _/___  ____ ____  _____/ /_(_)___  ____     ________  ______   _____  _____
+   / // __ \/ __ `/ _ \/ ___/ __/ / __ \/ __ \   / ___/ _ \/ ___/ | / / _ \/ ___/
+ _/ // / / / /_/ /  __(__  ) /_/ / /_/ / / / /  (__  )  __/ /   | |/ /  __/ /
+/___/_/ /_/\__, /\___/____/\__/_/\____/_/ /_/  /____/\___/_/    |___/\___/_/
+          /____/
+    
+2026-03-25 06:40:37,885 INFO     80 RAGFlow version: v0.24.0
+2026-03-25 06:40:37,885 INFO     80 Current configs, from /ragflow/conf/service_conf.yaml:
+	ragflow: {'host': '0.0.0.0', 'http_port': 9380}
+	admin: {'host': '0.0.0.0', 'http_port': 9381}
+	mysql: {'name': 'rag_flow', 'user': 'root', 'password': '********', 'host': 'mysql', 'port': 3306, 'max_connections': 900, 'stale_timeout': 300, 'max_allowed_packet': 1073741824}
+	minio: {'user': 'rag_flow', 'password': '********', 'host': 'minio:9000', 'bucket': '', 'prefix_path': ''}
+	es: {'hosts': 'http://es01:9200', 'username': 'elastic', 'password': '********'}
+	os: {'hosts': 'http://opensearch01:9201', 'username': 'admin', 'password': '********'}
+	infinity: {'uri': 'infinity:23817', 'postgres_port': 5432, 'db_name': 'default_db'}
+	oceanbase: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root@ragflow', 'password': 'infini_rag_flow', 'host': 'oceanbase', 'port': 32881}}
+	seekdb: {'scheme': 'oceanbase', 'config': {'db_name': 'ragflow_doc', 'user': 'root', 'password': 'infini_rag_flow', 'host': 'seekdb', 'port': 32882}}
+	redis: {'db': 1, 'username': '', 'password': '********', 'host': 'redis:6379'}
+	user_default_llm: {'default_models': {'embedding_model': {'api_key': 'xxx', 'base_url': 'http://tei:80'}}}
+	oauth: {'keycloak': {'type': 'oidc', 'icon': 'sso', 'display_name': 'Keycloak', 'client_id': 'ragflow', 'client_secret': '********', 'issuer': 'http://127.0.0.1.sslip.io:18088/realms/ragflow', 'scope': 'openid email profile', 'redirect_uri': 'http://localhost:18080/v1/user/oauth/callback/keycloak'}}
+2026-03-25 06:40:37,886 WARNING  80 SECURITY WARNING: Using auto-generated SECRET_KEY.
+2026-03-25 06:40:37,890 INFO     80 GET http://es01:9200/ [status:200 duration:0.003s]
+2026-03-25 06:40:37,892 INFO     80 HEAD http://es01:9200/ [status:200 duration:0.001s]
+2026-03-25 06:40:37,892 INFO     80 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-03-25 06:40:37,892 INFO     80 Elasticsearch http://es01:9200 is healthy.
+2026-03-25 06:40:37,892 INFO     80 Use Elasticsearch http://es01:9200 as the doc engine.
+2026-03-25 06:40:37,892 INFO     80 Elasticsearch http://es01:9200 is healthy.
+2026-03-25 06:40:37,894 WARNING  80 Load term.freq FAIL!
+2026-03-25 06:40:37,898 WARNING  80 Realtime synonym is disabled, since no redis connection.
+2026-03-25 06:40:37,901 WARNING  80 Load term.freq FAIL!
+2026-03-25 06:40:37,905 WARNING  80 Realtime synonym is disabled, since no redis connection.
+2026-03-25 06:40:37,905 INFO     80 can't import package 'torch'
+2026-03-25 06:40:37,905 INFO     80 default embedding config: {'model': '', 'factory': '', 'api_key': 'xxx', 'base_url': 'http://tei:80'}
+2026-03-25 06:40:37,905 INFO     80 MAX_CONTENT_LENGTH: 134217728
+2026-03-25 06:40:37,905 INFO     80 MAX_FILE_COUNT_PER_USER: 0
+2026-03-25 06:40:37,905 INFO     80 RAGFlow ingestion is ready after 32.175766706466675s initialization.
+2026-03-25 06:40:37,907 INFO     80 task_executor_c06045538b79_0 reported heartbeat: {"ip_address": "172.18.0.8", "pid": 80, "name": "task_executor_c06045538b79_0", "now": "2026-03-25T06:40:37.907+09:00", "boot_at": "2026-03-25T06:40:37.816+09:00", "pending": 0, "lag": 0, "done": 0, "failed": 0, "current": {}}
+2026-03-25 06:41:08,572 INFO     80 task_executor_c06045538b79_0 reported heartbeat: {"ip_address": "172.18.0.8", "pid": 80, "name": "task_executor_c06045538b79_0", "now": "2026-03-25T06:41:08.572+09:00", "boot_at": "2026-03-25T06:40:37.816+09:00", "pending": 0, "lag": 0, "done": 0, "failed": 0, "current": {}}
