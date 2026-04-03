@@ -19,7 +19,6 @@ This directory is a self-contained copy of `ragflow/docker` with only local chan
 ## Run
 
 ```bash
-cd /home/yrshin/projects/keycloak-rag-test
 docker compose -f docker-compose.keycloak.yml --env-file ./docker/.env up -d
 ```
 
